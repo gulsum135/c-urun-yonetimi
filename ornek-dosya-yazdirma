@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void DosyaYaz() {
+    FILE *file = fopen("urun.txt", "w");
+    if (file == NULL) {
+        printf("Dosya oluşturulamadı!\n");
+        return;
+    }
+
+    fprintf(file, "Laptop, 1500, 5, 2000, Elektronik\n");
+    fprintf(file, "Kulaklik, 500, 20, 1000, Elektronik\n");
+    fprintf(file, "Ofis Sandalyesi, 1200, 10, 3000, Mobilya\n");
+    fprintf(file, "Kitap - Roman, 80, 30, 100, Kitap\n");
+    fprintf(file, "Mutfak Robotu, 900, 7, 1200, Ev Aletleri\n");
+    fprintf(file, "T-shirt, 100, 50, 150, Giyim\n");
+    fprintf(file, "Ayakkabi, 250, 25, 600, Giyim\n");
+    fprintf(file, "Çamaşir Makinesi, 7000, 3, 21000, Beyaz Esya\n");
+    fprintf(file, "Tablet, 3000, 6, 4200, Elektronik\n");
+    fprintf(file, "Oyuncak Araba, 150, 40, 600, Oyuncak\n");
+
+    fclose(file);
+    printf("Dosya yazıldı.\n");
+}
+
+int main() {
+    DosyaYaz();
+    return 0;
+}
+
