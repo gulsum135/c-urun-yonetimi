@@ -32,4 +32,5 @@ Bağlı liste (linked list) kullanarak ürünleri tutar ve çeşitli işlemler y
 
 ## 📂 Örnek `urun.txt` Formatı
 Dosyadaki her satır, virgül ile ayrılmış şekilde aşağıdaki formatta olmalıdır:
-
+UrunAdi,BirimFiyat,Adet,SatisFiyati,Kategori
+ **Not:** Program başlatıldığında bu dosyayı okur. Dosya yoksa çalışmaz.
